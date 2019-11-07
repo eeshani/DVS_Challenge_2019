@@ -1,0 +1,134 @@
+html, body {
+  margin: 40px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#controls {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+span:nth-child(2) {
+  margin-left: 20px;
+}
+
+#country-info {
+  color: #666;
+  font-size: 28px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+/**
+svg {
+  border: 1px solid #ddd;
+}
+
+circle {
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.collapsible {
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}**/
+
+.continent-key-element text {
+  fill: white;
+}
+
+.collapsible {
+  background-color: #20B2AA;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-family: ubuntu;
+  font-size: 110%;
+}
+
+.collapsible:hover {
+  background-color: #008080;
+}
+
+.active{
+    background-color: #006060;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.svg-container{
+     display: inline-block;
+     margin: 0 auto;
+  }
+
+.key{
+  padding-bottom: 25px;
+}
+
+.tooltip{
+  font-family: ubuntu;
+}
+/*  
+.leftbox { 
+    float:left;  
+    background:Red; 
+    width:25%; 
+    height:280px; 
+} 
+#middlebox{ 
+    float:left;  
+    background:Green; 
+    width:50%; 
+    height:280px; 
+} 
+.rightbox{ 
+    float:right; 
+    background:blue; 
+    width:25%; 
+    height:280px; 
+} 
+
+
+section {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #fafaf1;
+  clear: none;
+  /*height: 300px;  only for demonstration, should be removed 
+}
+*/

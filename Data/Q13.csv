@@ -1,0 +1,19 @@
+name,number
+Line Chart,247
+Bar Chart,253
+Pie Chart,124
+Scatterplot,187
+Hexbin/Heatmap,114
+Infographics,125
+Pictorial Visualization,67
+Treemap,107
+Dendrogram,18
+Network Diagram,69
+Choropleth Map,105
+Raster Map,31
+"Flow Diagram (Sankey, DAGRE, Flow Chart)",99
+3D Charts,22
+VR/AR Charts,9
+Swarm Chart,25
+Force-Directed Graph,40
+Other,53

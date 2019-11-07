@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <!-- link rel="stylesheet" href="index.css" -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">        
+        <link href="style.css" rel="stylesheet">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <title>DVS 2019</title>
+    </head>
+
+    <body style="align:center">
+
+        <img src="DataChallenge.png" width="200" style="float:center;">
+
+        <h1 style="text-align:center;margin-top: 10px;margin-bottom: 50px;font-family:ubuntu;font-size:300%;color:#444444">Freelancers  in  Data  Visualization</h1>
+
+        <p style="text-align:center;margin-top: 10px;margin-bottom: 50px;font-family:ubuntu;font-size:100%;color:#444444">
+            This data visualization project is created in response to the DVS Challenge 2019 conducted by the Data Visualization Society focusing on the results of the Annual Data Visualization Community Survey.
+
+            The Annual Data Visualization Community Survey for 2019 has responses to 50+ questions and was taken by over 1,350 people connected to the field of data visualization. This project is focussed specially on the responses of the freelancers in this field. Thus, it will help contributors understand the trends and technologies relevant to data visualization!
+        </p>
+<!--        
+        <button type="button" class="collapsible">1. Have you studied data visualization in school (or other formal environment) or did you learn how to do it on your own?</button><div class="content" style="overflow: visible">
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">Have you studied data visualization in school (or other formal environment) or did you learn how to do it on your own?</h2>      
+        <div id="base-info1"></div>
+        <div id="bubble-chart1"></div>
+        <div id="key1" class="key"></div></section>
+        </div>
+-->  
+        
+        <button type="button" class="collapsible" style="background-color: #008080" >I. What are best methods to learn Data Visualization?</button>
+        <div class="content" style=" display: block">
+                <!--<h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">2. What methods do you think best teach data visualization?</h2>-->
+        <table>
+              <tr>
+                <th><div id="key2" class="key"></div></th>
+                <th><div id="bubble-chart2"></div></th>
+              </tr>
+        </table>
+        </div>
+<!--
+        <button type="button" class="collapsible">3. What focus is data visualization in your work?</button><div class="content" style="overflow: visible">
+        //<h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">3. What focus is data visualization in your work?</h2>
+        <div id="base-info3"></div>
+        <div id="bubble-chart3"></div>
+        </div>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">4. For the majority of your projects: were you hired to do data visualization only or is data visualization a part of your job/project description?</h2>
+        <div id="base-info4"></div>
+        <div id="bubble-chart4"></div>
+-->
+        <button type="button" class="collapsible">II. What is closest to describing the role of freelancer in Data Visualization?</button><div class="content" style="overflow: none">
+        <!--<h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">5. Which one of these is the closest to describing your role?</h2>
+        <div id="base-info5"></div>
+        <div id="bubble-chart5"></div>
+        <div id="key5" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key5" class="key"></div></th>
+            <th><div id="bubble-chart5"></div></th>  
+            </tr>
+        </table>
+        </div>
+
+        <!--<button type="button" class="collapsible">6. What is your hourly rate?</button><div class="content" style="overflow: visible">
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">6. What is your hourly rate?</h2>
+        <div id="base-info6"></div>
+        <div id="bubble-chart6"></div>
+        <div id="key6" class="key"></div></section>
+        </div>-->
+
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">III. How are different organizations using data visualization?</h2> -->
+        <button type="button" class="collapsible" style="background-color: #008080" >III. How are different organizations using Data Visualization?</button><div class="content">
+        <!--<div id="base-info7"></div>
+        <div id="bubble-chart7" class="svg-container" style="margin: auto;"></div>
+        <div id="key7" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key7" class="key"></div></th>
+            <th><div id="bubble-chart7"></div></th>  
+            </tr>
+        </table>
+        </div>
+
+<!--
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">8. What modes of data visualization are in use at your organization? Select all that apply.</h2>
+        <div id="base-info8"></div>
+        <div id="bubble-chart8"></div>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">9. Data visualization at your organization features prominently in what parts of the organization? Select all that apply.</h2>
+        <div id="base-info9"></div>
+        <div id="bubble-chart9"></div>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">10. Hours a week focused on creating/implementing/productizing data visualizations?</h2>
+        <div id="base-info10"></div>
+        <div id="bubble-chart10"></div>
+        <div id="key10" class="key"></div></section>
+-->
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">IV. Technologies used to visualize data</h2>-->
+        <button type="button" class="collapsible">IV. What technologies are used in Data Visualization?</button><div class="content" style="overflow: none">
+        <!--<div id="base-info11"></div>
+        <div id="bubble-chart11"></div>
+        <div id="key11" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key11" class="key"></div></th>
+            <th><div id="bubble-chart11"></div></th>  
+            </tr>
+        </table>
+        </div>
+
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">V. How do you present your data visualizations?</h2>-->
+        <button type="button" class="collapsible" style="background-color: #008080" >V. How do they present their Data Visualizations?</button><div class="content">
+        <!--<div id="base-info12"></div>
+        <div id="bubble-chart12"></div>
+        <div id="key12" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key12" class="key"></div></th>
+            <th><div id="bubble-chart12"></div></th>  
+            </tr>
+        </table>
+        </div>
+
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">VI. Different types of charts used in production in the last 6 months</h2>-->
+        <button type="button" class="collapsible">VI. What are the different types of charts used in production in the last 6 months?</button><div class="content" style="overflow: none">
+        <!--<div id="base-info13"></div>
+        <div id="bubble-chart13"></div>
+        <div id="key13" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key13" class="key"></div></th>
+            <th><div id="bubble-chart13"></div></th>  
+            </tr>
+        </table>
+        </div>
+<!--
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">14. What does your audience use your data visualization for? Select all that apply.</h2>
+        <div id="base-info14"></div>
+        <div id="bubble-chart14"></div>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">15. How would you describe your relationship with stakeholders?</h2>
+        <div id="base-info15"></div>
+        <div id="bubble-chart15"></div>
+        <div id="key15" class="key"></div></section>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">16. Who do you look to as a thought leader in data visualization?</h2>
+        <div id="base-info16"></div>
+        <div id="bubble-chart16"></div>
+        <div id="key16" class="key"></div></section>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">17. How many years of experience do you have doing professional data visualization?</h2>
+        <div id="base-info17"></div>
+        <div id="bubble-chart17"></div>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">18. The organization you work for is in which of the following areas?</h2>
+        <div id="base-info18"></div>
+        <div id="bubble-chart18"></div>
+        <div id="key18" class="key"></div></section>
+
+        <h2 style="text-align:left;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">19. If you went to college, what did you major in during your undergraduate work?</h2>
+        <div id="base-info19"></div>
+        <div id="bubble-chart19"></div>
+-->
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">VII. What's your gender identity?</h2>-->
+        <button type="button" class="collapsible" style="background-color: #008080" >VII. What's their gender identity?</button><div class="content">
+        <!--<div id="base-info20"></div>
+        <div id="bubble-chart20"></div>
+        <div id="key20" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key20" class="key"></div></th>
+            <th><div id="bubble-chart20"></div></th>  
+            </tr>
+        </table>
+        </div>
+
+        <!--<h2 style="text-align:center;margin-left: 50px;font-family:ubuntu;font-size:120%;color:#444444">VIII. What country do you live in?</h2>-->
+        <button type="button" class="collapsible">VIII. Where can you find them?</button><div class="content" style="overflow: none">
+        <!--<div id="base-info21"></div>
+        <div id="bubble-chart21"></div> 
+        <div id="key21" class="key"></div>
+        </div>-->
+        <table>
+            <tr>          
+            <th><div id="key21" class="key"></div></th>
+            <th><div id="bubble-chart21"></div></th>  
+            </tr>
+        </table>
+        </div>
+        
+    
+
+<!--
+    <script>
+          d3.queue()
+            .defer(d3.json, "allquestion.json")
+            .await(createBubbleChart);
+    </script>
+
+-->
+
+        <script src="DVS.js"></script>
+
+    </body>
+</html>
